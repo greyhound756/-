@@ -1,0 +1,42 @@
+# import os
+# import time
+
+# plan1 = 'OpenApp'
+# plan2 = 'SystemCrash'
+# # paln3 = str
+# comandStart = '/start'
+
+# def SelectPlan():
+#     w = input("Welcome to システムカミカゼ. This program can execute specific actions on your PC. To start, type '/start': ")
+#     if w == comandStart:
+#         s =  print("Available plans:")
+#         print(f"1. {plan1}")
+#         print(f"2. {plan2}")
+#         selected_plan = input("Enter the name of the plan you want to execute: ")
+#         return selected_plan
+#     if s == plan1:
+#         return(openApp)  
+#     def openApp():
+#         while True:
+#             app_name = input("Введите название программы (например, chrome): ")
+
+#             try:
+#                 start_time = time.time() 
+#                 result = os.system(f'start {app_name}')
+#                 end_time = time.time() 
+
+#                 elapsed_time = end_time - start_time
+#                 if result == 0:
+#                     print(f"Программа {app_name} успешно запущена за {elapsed_time:.2f} секунд(ы)!")
+#                 else:
+#                     print(f"Не удалось запустить программу {app_name}. Проверьте название.")
+#             except Exception as e:
+#                 print(f"Произошла ошибка при запуске программы {app_name}: {e}")
+
+#             q = input("Попробовать ещё раз? [yes/no]: ").lower()
+
+#             if q not in ['yes', 'да']:
+#                 print("Завершение программы.")
+#                 break
+
+# openApp()
